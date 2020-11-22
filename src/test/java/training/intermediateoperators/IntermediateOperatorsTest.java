@@ -59,7 +59,7 @@ public class IntermediateOperatorsTest {
     @Test public void increasingSawtoothTest() {
         tester(
                 instance,
-                Stream.of(0, 1, 0, 1, 2, 0, 1, 2, 3, 0, 1, 2, 3, 4, 0, 1, 2, 3, 4, 5, 0, 1, 2, 3, 4, 5, 6),
+                Stream.of(0, 0, 1, 0, 1, 2, 0, 1, 2, 3, 0, 1, 2, 3, 4, 0, 1, 2, 3, 4, 5, 0, 1, 2, 3, 4, 5, 6),
                 IntermediateOperatorsExercise::staircase,
                 s -> s.collect(Collectors.toList())
         );

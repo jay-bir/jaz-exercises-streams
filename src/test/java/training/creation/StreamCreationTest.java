@@ -73,5 +73,4 @@ public class StreamCreationTest {
                 s -> s.collect(Collectors.toList())
         );
     }
-
 }
