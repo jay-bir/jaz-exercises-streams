@@ -36,7 +36,7 @@ public class TerminalOperatorsExercise implements StreamTerminalOperators {
 
     @Override
     public String mergeIntoString(Stream<String> stream) {
-        return stream.collect(Collectors.joining("-"));
+        return stream.collect(Collectors.joining("-","[","]"));
     }
 
     @Override
